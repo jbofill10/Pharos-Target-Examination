@@ -25,13 +25,15 @@ def run():
         # PubTator Scores
         query(connection, table='ptscore', columns=['id', 'protein_id', 'year', 'score'], save_dest='Data/pt_scores')
 
-        # PubMed Stuff
-        query(connection, table='ncats_ligands', columns=['id', 'identifier', 'name', 'isDrug', 'smiles', 'PubChem', 'ChEMBL', 'Guide to Pharmacology', 'DrugCentral', 'description', 'actCnt'],
+        # Ligand Activity
+        query(connection, table='ncats_ligand_activity', columns=['id', 'ncats_ligand_id', 'target_id', 'smiles', 'act_value', 'act_type', 'action_type', 'reference', 'reference_source', 'pubmed_ids'],
               save_dest='Data/ligands')
 
         # Ortholog Data
         query(connection, table='ortholog', columns=['id', 'protein_id', 'taxid', 'species', 'db_id', 'geneid', 'symbol', 'name', 'mod_url', 'sources'], save_dest='Data/ortholog')
 
+        # Go annotations
+        query(connection, table='goa', columns=['id', 'protein_id', 'go_id', 'go_term', 'evidence', 'goeco', 'assigned_by'], save_dest='Data/goa')
 
     except Exception as error:
         raise error
@@ -49,9 +51,9 @@ def query(connection, table, columns, save_dest):
         df = pd.DataFrame(res, columns=columns)
 
         df.to_pickle(save_dest)
-        print('Query successful')
+        print(f'Query to {table} successful')
     except Exception as error:
-        print("Failed fetching Target Data\n\n")
+        print(f"Failed fetching {table} Data\n\n")
         raise error
 
 
