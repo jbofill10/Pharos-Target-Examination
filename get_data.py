@@ -35,15 +35,18 @@ def run():
         # Go annotations
         query(connection, table='goa', columns=['id', 'protein_id', 'go_id', 'go_term', 'evidence', 'goeco', 'assigned_by'], save_dest='Data/goa')
 
+        query(connection, table='tdl_info', columns=['id', 'itype', 'target_id', 'protein_id', 'nucleic_acid_id', 'string_value', 'number_value', 'integer_value', 'date_value', 'boolean_value', 'curration_level'], 
+            save_dest='Data/tdl_info',
+            condition=" where itype = 'Ab Count'")
     except Exception as error:
         raise error
 
 
-def query(connection, table, columns, save_dest):
+def query(connection, table, columns, save_dest, condition=''):
     cursor = connection.cursor()
 
     try:
-        cursor.execute(f'select * from {table};')
+        cursor.execute(f'select * from {table}{condition};')
         res = cursor.fetchall()
 
         res = [list(i) for i in res]
