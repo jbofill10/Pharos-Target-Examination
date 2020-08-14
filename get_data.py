@@ -34,10 +34,21 @@ def run():
 
         # Go annotations
         query(connection, table='goa', columns=['id', 'protein_id', 'go_id', 'go_term', 'evidence', 'goeco', 'assigned_by'], save_dest='Data/goa')
-
+        
+        # Ab count
         query(connection, table='tdl_info', columns=['id', 'itype', 'target_id', 'protein_id', 'nucleic_acid_id', 'string_value', 'number_value', 'integer_value', 'date_value', 'boolean_value', 'curration_level'], 
             save_dest='Data/tdl_info',
             condition=" where itype = 'Ab Count'")
+
+    # OMIM Publications
+
+        query(connection, table='disease', columns=['id', 'dtype', 'protein_id', 'nhprotein_id', 'name', 'ncats_name', 'did', 
+            'evidence', 'zscore', 'conf', 'description', 'reference', 'drug_name', 'log2foldchange', 'pvalue', 'score', 'source', 'OS2', 'S20'], save_dest='Data/omim', condition=" where source = 'OMIM';")
+
+    # HGram
+
+        query(connection, table='hgram_cdf', columns=['id', 'protein_id', 'type', 'attr_count', 'attr_cdf'], save_dest='Data/hgram')
+        
     except Exception as error:
         raise error
 
