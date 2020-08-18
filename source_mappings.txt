@@ -1,0 +1,129 @@
+process_biological:
+	GO Biological Process Annotations
+term_biological:
+
+line cell:
+	CCLE Cell Line Gene CNV Profiles
+	CCLE Cell Line Gene Mutation Profiles
+	HPA Cell Line Gene Expression Profiles
+	Achilles Cell Line Gene Essentiality Profiles
+	BioGPS Cell Line Expression Profiles
+	Klijn et al., Nat. Biotechnol., 2015 Cell Line Gene CNV Profiles
+	Klijn et al., Nat. Biotechnol., 2015 Cell Line Gene Expression Profiles
+	COSMIC Cell Line Gene Mutation Profiles
+	CCLE Cell Line Gene Expression Profiles
+	COSMIC Cell Line Gene CNV Profiles
+	GDSC Cell Line Gene Expression Profiles
+tissue_or_cell_type:
+	BioGPS Mouse Cell Type and Tissue Gene Expression Profiles
+	BioGPS Human Cell Type and Tissue Gene Expression Profiles
+	ProteomicsDB Cell Type and Tissue Protein Expression Profiles
+	Roadmap Epigenomics Cell and Tissue DNA Methylation Profiles
+component_cellular:
+	COMPARTMENTS Text-mining Protein Localization Evidence Scores
+	GO Cellular Component Annotations
+	LOCATE Predicted Protein Localization Annotations
+	COMPARTMENTS Curated Protein Localization Evidence Scores
+	COMPARTMENTS Experimental Protein Localization Evidence Scores
+	LOCATE Curated Protein Localization Annotations
+chemical:
+
+profile_bioactivity_chemical:
+
+gene_co_expresed:
+	MSigDB Cancer Gene Co-expression Modules
+disease:
+	DISEASES Experimental Gene-Disease Assocation Evidence Scores
+	DISEASES Curated Gene-Disease Assocation Evidence Scores
+	GAD Gene-Disease Associations
+	CTD Gene-Disease Associations
+	GAD High Level Gene-Disease Associations
+	DISEASES Text-mining Gene-Disease Assocation Evidence Scores
+	PhosphoSitePlus Phosphosite-Disease Associations
+	GWASdb SNP-Disease Associations
+perturbation_gene:
+	GEO Signatures of Differentially Expressed Genes for Gene Perturbations
+	MSigDB Signatures of Differentially Expressed Genes for Cancer Gene Perturbations
+profile_site_modification_histone:
+	ECONDE Histone Modification Site Profiles
+protein_hub:
+	Hub Proteins Protein-Protein Interactions
+interacting_protein:
+	NURSA Protein-Protein Interactions
+	Pathway Commons Protein-Protein Interactions
+kinase:
+
+perturbation_kinase:
+	GEO Signatures of Differentially Expressed Genes for Kinase Perturbations
+chemical_ligand:
+
+protein_ligand:
+
+perturbation_protein_ligand:
+
+metabollite:
+
+microRNA:
+	MiRTarBase microRNA Targets
+function_molecular:
+	GO Molecular Function Annotations
+pathway:
+	PID Pathways
+	HumanCyc Pathways
+	Biocarta Pathways
+	PANTHER Pathways
+	Reactome Pathways
+	KEGG Pathways	
+phenotype:
+	OMIM Gene-Disease Associations
+	MPO Gene-Phenotype Associations
+	GWAS Catalog SNP-Phenotype Associations
+	GWASdb SNP-Phenotype Associations
+	ClinVar Gene-Phenotype Associations
+	HPO Gene-Disease Associations
+	HuGE Navigator Gene-Phenotype Associations
+phosphatase:
+	
+domain_protein:
+	InterPro Predicted Protein Domain Annotations
+PubMed_id:
+	ESCAPE Omics Signatures of Genes and Proteins for Stem Cells
+	GeneSigDB Published Gene Signatures
+molecule_small:
+
+perturbation_molecule_small:
+	LINCS L1000 CMAP Signatures of Differentially Expressed Genes for Small Molecules
+	GEO Signatures of Differentially Expressed Genes for Small Molecules
+	CMAP Signatures of Differentially Expressed Genes for Small Molecules
+SNP:
+
+tissue:
+	HPA Tissue Gene Expression Profiles
+	Allen Brain Atlas Adult Mouse Brain Tissue Gene Expression Profiles
+	HPA Tissue Protein Expression Profiles
+	GTEx Tissue Gene Expression Profiles
+	Allen Brain Atlas Adult Human Brain Tissue Gene Expression Profiles
+	Allen Brain Atlas Prenatal Human Brain Tissue Gene Expression Profiles
+sample_tissue:
+	GTEx Tissue Sample Gene Expression Profiles
+	HPA Tissue Sample Gene Expression Profiles
+	Allen Brain Atlas Developing Human Brain Tissue Gene Expression Profiles by Microarray
+	Allen Brain Atlas Developing Human Brain Tissue Gene Expression Profiles by RNA-seq
+trait:
+
+factor_transcription:
+	ENCODE Transcription Factor Targets
+	JASPAR Predicted Transcription Factor Targets
+	CHEA Transcription Factor Targets
+	MotifMap Predicted Transcription Factor Targets
+binding_factor_transcription:
+	ENCODE Transcription Factor Binding Site Profiles
+	CHEA Transcription Factor Binding Site Profiles
+perturbation_factor_transcription:
+	GEO Signatures of Differentially Expressed Genes for Transcription Factor Perturbations
+
+protein_viral:
+
+virus:
+
+
